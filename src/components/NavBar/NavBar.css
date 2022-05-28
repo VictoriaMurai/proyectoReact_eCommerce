@@ -1,0 +1,23 @@
+.NavBar{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    margin-left: 50px;
+    align-content: space-around;
+}
+
+.menu-item{
+    margin: 15px;
+    padding: 10px;
+}
