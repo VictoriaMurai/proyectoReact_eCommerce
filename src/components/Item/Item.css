@@ -1,0 +1,32 @@
+li{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.imgItem{
+    width: 12rem;
+    border-radius: 5%;
+}
+
+.botonAgregar{
+    width: 60%;
+}
+
+.Item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 15rem;
+    height: 21rem;
+    text-align: column;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.285);;
+}
+
+.ItemDesc{
+    display: flex;
+    flex-direction: column;
+}
