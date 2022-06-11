@@ -1,6 +1,7 @@
 import './NavBar.css'
 import LogoViaVinera from "../LogoViaVinera/LogoViaVinera"
 import CartWidget from "../CartWidget/CartWidget"
+import { Link, NavLink } from 'react-router-dom'
 
 const NavBar = () => {
     return (
@@ -8,13 +9,15 @@ const NavBar = () => {
 
             <div className='logo-menu'>
 
-            <LogoViaVinera />
+            <Link to='/'>
+                <LogoViaVinera />
+            </Link>
 
             <div className='menu'>
-                <button className='menu-item'>Mermeladas</button>
-                <button className='menu-item'>Conservas</button>
-                <button className='menu-item'>Licores</button>
-                <button className='menu-item'>Desayunos</button>
+                <NavLink to='/category/mermeladas' className={({isActive}) => isActive ? 'menu-item-active' : 'menu-item'}>Mermeladas</NavLink>
+                <NavLink to='/category/conservas' className={({isActive}) => isActive ? 'menu-item-active' : 'menu-item'}>Conservas</NavLink>
+                <NavLink to='/category/licores' className={({isActive}) => isActive ? 'menu-item-active' : 'menu-item'}>Licores</NavLink>
+                <NavLink to='/category/desayunos' className={({isActive}) => isActive ? 'menu-item-active' : 'menu-item'}>Desayunos</NavLink>
             </div>
 
             </div>

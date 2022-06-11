@@ -20,4 +20,17 @@
 .menu-item{
     margin: 15px;
     padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+    color: black;
+}
+
+.menu-item-active{
+    margin: 15px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #a6a6a6;
+    color: black;
 }

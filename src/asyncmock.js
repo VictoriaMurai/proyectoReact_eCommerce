@@ -6,7 +6,7 @@ const products = [
         category: 'mermeladas',
         pictureUrl: '/images/mermelada-arandanos.jpg',
         stock: 7,
-        description: '...'
+        description: 'Ingredientes: arándanos, azúcar morena, jugo de limón.'
     },
 
     {
@@ -16,7 +16,7 @@ const products = [
         category: 'mermeladas',
         pictureUrl: '/images/mermelada-ciruela.jpg',
         stock: 10,
-        description: '...'
+        description: 'Ingredientes: ciruelas, azúcar morena, jugo de limón.'
     },
 
     {
@@ -26,7 +26,7 @@ const products = [
         category: 'mermeladas',
         pictureUrl: '/images/mermelada-mandarina.jpg',
         stock: 9,
-        description: '...'
+        description: 'Ingredientes: mandarinas, azúcar morena, jugo de limón.'
     },
 
     {
@@ -36,7 +36,7 @@ const products = [
         category: 'mermeladas',
         pictureUrl: '/images/mermelada-naranja.jpg',
         stock: 12,
-        description: '...'
+        description: 'Ingredientes: naranjas orgánicas 70% y azúcar morena orgánica.'
     },
 
     {
@@ -46,7 +46,7 @@ const products = [
         category: 'conservas',
         pictureUrl: '/images/berenjenas.jpg',
         stock: 6,
-        description: '...'
+        description: 'Ingredientes: berenjenas, aceite, vinagre, ajo, orégano, romero, laurel.'
     },
 
     {
@@ -56,7 +56,7 @@ const products = [
         category: 'conservas',
         pictureUrl: '/images/champignones.jpg',
         stock: 10,
-        description: '...'
+        description: 'Ingredientes: champiñones, aceite, vinagre, ajo, orégano, romero.'
     },
 
     {
@@ -66,7 +66,7 @@ const products = [
         category: 'conservas',
         pictureUrl: '/images/morrones.jpg',
         stock: 5,
-        description: '...'
+        description: 'Ingredientes: morrones rojos, morrones amarillos, morrones verdes, aceite, ajo, orégano.'
     },
 
     {
@@ -76,7 +76,7 @@ const products = [
         category: 'conservas',
         pictureUrl: '/images/repollitos.jpg',
         stock: 6,
-        description: '...'
+        description: 'Ingredientes: repollitos de bruselas, aceite, ajo, orégano.'
     },
 
     {
@@ -86,7 +86,7 @@ const products = [
         category: 'licores',
         pictureUrl: '/images/limoncello.jpg',
         stock: 10,
-        description: '...'
+        description: 'Ingredientes: alcohol alimenticio, azúcar blanca, limón.'
     },
 
     {
@@ -96,7 +96,7 @@ const products = [
         category: 'desayunos',
         pictureUrl: '/images/desayuno.jpg',
         stock: 10,
-        description: '...'
+        description: '2 mermeladas y 2 conservas a elección. Pan casero, té y café. Opcional: taza de té.'
     }
 ]
 
@@ -106,6 +106,22 @@ export const getProducts = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(products)
-        }, 2000)
+        }, 500)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 500)
+    })
+}
+
+export const getProductById = (id) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 500)
     })
 }

@@ -1,0 +1,33 @@
+.detalle{
+    display: flex;
+    padding: 7% 5% 7% 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.detalle-desc{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+
+.imgItemDetalle{
+    width: 20rem;
+    border-radius: 5%;
+}
+
+.tituloItem{
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 400;
+    font-family: "museo-sans", sans-serif;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "museo-sans", sans-serif;
+}
