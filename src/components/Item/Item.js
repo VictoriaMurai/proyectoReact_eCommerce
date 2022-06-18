@@ -1,7 +1,10 @@
 import './Item.css'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import CartContext from '../../App'
 
-const Item = ({pictureUrl, title, price, id}) => {
+const Item = ({id, pictureUrl, title, price}) => {
+
     return (
         <li>
             <div className='Item'>
@@ -10,6 +13,7 @@ const Item = ({pictureUrl, title, price, id}) => {
                 <div className='ItemDesc'>
                     <div>{title}</div>
                     <div>$ {price}</div>
+                    <div>{CartContext}</div>
                 </div>
 
                 <div className='divButtons'>
