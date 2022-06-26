@@ -1,0 +1,9 @@
+.cartItems{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartItem{
+    width: 17%;
+    text-align: left;
+}

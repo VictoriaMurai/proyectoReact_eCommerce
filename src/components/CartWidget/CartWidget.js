@@ -9,12 +9,17 @@ const CartWidget = () => {
 
     const totalQuantity = getCartQuantity()
 
+
+    if (totalQuantity === 0) {
+            return <div></div>
+    }
+
     return (
         <div className='cartContainer'>
             <Link to='/cart'>
                 <img src='/images/shopping-cart.png' alt='Cart-Widget' className='cart'/>
+                {totalQuantity}
             </Link>
-            {totalQuantity}
         </div>
     )
 }
