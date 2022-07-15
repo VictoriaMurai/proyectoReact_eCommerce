@@ -12,13 +12,12 @@ const Item = ({id, pictureUrl, title, price}) => {
 
                 <div className='ItemDesc'>
                     <div>{title}</div>
-                    <div>$ {price}</div>
-                    <div>{CartContext}</div>
+                    <div>${price}</div>
+                    {/*<div>{CartContext}</div>*/}
                 </div>
 
                 <div className='divButtons'>
                     <Link to={`/detail/${id}`} className='Option'>Ver detalle</Link>
-                    <button className='botonAgregar'>Agregar al carrito</button>
                 </div>
 
             </div>

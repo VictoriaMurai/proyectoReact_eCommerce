@@ -1,3 +1,6 @@
+/*const orderCheckout = setOrder() => {
+}*/
+
 import { useContext, useState } from "react"
 import CartContext from "../../context/CartContext"
 import CartItemList from "../CartItemList/CartItemList"
@@ -6,8 +9,7 @@ import { addDoc, collection, updateDoc, doc, writeBatch, getDocs, query, where, 
 import { db } from '../../services/firebase/index'
 import { useNotification } from "../../notification/Notification"
 
-
-const Cart = () => {
+const Checkout = () => {
 
     const[loading, setLoading] = useState(false)
     const {cart, totalQuantity, getTotal, clearCart} = useContext(CartContext)
@@ -94,16 +96,24 @@ const Cart = () => {
 
     return (
         <>
-            <h1>Cart</h1>
-            <div>
-                <CartItemList productsAdded={cart}/>
-                <h3>Total: ${total}</h3>
-                {/*<button onClick={handleCreateOrder}>Generar orden</button>*/}
-                <NavLink to='/Checkout'>Generar orden</NavLink>                
-                <button onClick={() => clearCart()}>Limpiar carrito</button>
-            </div>
+            <form class="formContainer__form" action="https://formspree.io/f/xgedopga" method="post">
+                
+                <div class="nombre-form form-floating">
+                    <input class="form-control" type="text" name="nombre" id="floatingInput" placeholder="Nombre y apellido"/>
+                </div>
+                <div class="apellido-form form-floating">
+                    <input class="form-control" type="text" name="apellido" id="floatingInput" placeholder="email"/>
+                </div>
+                <div class="email-form form-floating">
+                    <input class="form-control" type="mail" name="mail" required id="floatingInput" placeholder="Teléfono"/>
+                </div>
+                <div class="email-form form-floating">
+                    <input class="form-control" type="mail" name="mail" required id="floatingInput" placeholder="Dirección"/>
+                </div>
+                <input onClick={() => handleCreateOrder()} class= "enviar-form" type="submit" value="Enviar formulario" name="" id=""/>
+            </form>
         </>
     )
 }
 
-export default Cart
+export default Checkout
