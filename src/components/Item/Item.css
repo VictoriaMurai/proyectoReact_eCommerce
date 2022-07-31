@@ -46,7 +46,7 @@ li{
     height: 21rem;
     text-align: column;
     border-radius: 5%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.285);;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.285);;
 }
 
 .ItemDesc{
@@ -77,9 +77,9 @@ li{
     align-items: flex-start;
     cursor: default;
     box-sizing: border-box;
-    background-color: buttonface;
+    background-color: #9aa19871;
     margin: 0em;
-    padding: 1px 6px;
+    padding: 5px 10px;
     border-width: 2px;
     border-style: outset;
     border-color: white;

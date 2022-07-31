@@ -1,20 +1,22 @@
-.cartItems{
+form{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem
 }
 
-.cartItem{
-    width: 17%;
-    text-align: left;
-}
-
-.ButtonCartItem{
+input{
+    margin: 10px;
     padding: 10px;
-    height:min-content;
+    width: 25%
+}
+
+.submitForm{
+    margin: 10px;
+    padding: 10px;
     text-decoration: none;
     border-radius: 10px;
     background-color: white;
     color: #0C0C0C;
     border: 0.01rem solid black;
-    align-self: center;
 }

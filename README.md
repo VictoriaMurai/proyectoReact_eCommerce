@@ -4,7 +4,7 @@ Este proyecto es un eCommerce desarrollado en el marco del curso React JS de Cod
 
 ## GIF demo de navegación
 
-https://media.giphy.com/media/yjjWGyfM8Jr8pwXFJK/giphy.gif
+https://www.canva.com/design/DAFIB-T_qMA/2jz8jYzeLFK8LgFU8668zw/watch?utm_content=DAFIB-T_qMA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 ## Comandos para ejecutar la app
 

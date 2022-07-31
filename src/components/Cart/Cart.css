@@ -1,0 +1,32 @@
+.botonOrden{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #0C0C0C;
+    border: 0.01rem solid black;
+}
+
+.conoce{
+    display: flex;
+    padding: 5px;
+    height:min-content;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.conoce_link{
+    padding: 5px;
+    height:min-content;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #0C0C0C;
+    border: 0.01rem solid black;
+    align-self: center;
+}

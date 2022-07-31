@@ -16,7 +16,7 @@ const CartWidget = () => {
 
     return (
         <div className='cartContainer'>
-            <Link to='/cart'>
+            <Link to='/cart' className='cartWidget'>
                 <img src='/images/shopping-cart.png' alt='Cart-Widget' className='cart'/>
                 {totalQuantity}
             </Link>

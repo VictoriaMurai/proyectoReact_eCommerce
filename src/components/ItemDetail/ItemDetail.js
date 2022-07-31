@@ -24,14 +24,13 @@ const ItemDetail = ({id, title, pictureUrl, price, description, stock}) => {
                     <div className='tituloItem'>{title}</div>
                     <div className='text'>$ {price}</div>
                     <div className='text'>{description}</div>
-                </div>
-
-                <footer className='ItemFooter'>
+                    <footer className='ItemFooter'>
                     { quantityAdded === 0
                         ?  <ItemCount stock={stock} onAdd={handleOnAdd} />
-                        :  <Link to='/cart'>Terminar mi compra</Link>
+                        :  <Link to='/cart' className='terminarCompra'>Terminar mi compra</Link>
                     }
-                </footer>
+                    </footer>
+                </div>
             </div>
     )
 }
